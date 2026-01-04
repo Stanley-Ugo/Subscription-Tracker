@@ -18,10 +18,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(arcjetMiddleware)
 
-app.use('/api/vi/auth', authRouter);
-app.use('/api/vi/subscriptions', subscriptionRouter);
-app.use('/api/vi/users', userRouter);
-app.use('/api/vi/workflows', workflowRouter);
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/subscriptions', subscriptionRouter);
+app.use('/api/v1/users', userRouter);
+app.use('/api/v1/workflows', workflowRouter);
 
 app.use(errorMiddleware);
 
